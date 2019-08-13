@@ -8,4 +8,7 @@ WORKDIR $word_dir
 RUN pip install -r requirements.txt
 USER flaskuser
 ENTRYPOINT [ "python" ]
+
+EXPOSE 8080/tcp
+
 CMD  ["main.py"]
