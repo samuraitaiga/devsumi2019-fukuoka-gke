@@ -1,10 +1,10 @@
 FROM python:3.7.4-alpine
 RUN adduser -D flaskuser
-ARG word_dir=/home/flaskuser/
-ADD requirements.txt $word_dir
-ADD templates $word_dir
-ADD main.py $word_dir
-WORKDIR $word_dir
+ARG work_dir=/home/flaskuser/
+ADD requirements.txt $work_dir
+ADD templates $work_dir/templates/
+ADD main.py $work_dir
+WORKDIR $work_dir
 RUN pip install -r requirements.txt
 USER flaskuser
 ENTRYPOINT [ "python" ]
