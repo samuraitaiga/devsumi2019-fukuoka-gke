@@ -17,6 +17,7 @@ spec:
       containers:
       - name: frontend
         image: gcr.io/gcp-demo-189107/github.com/samuraitaiga/devsumi2019-fukuoka-gke-frontend:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
           protocol: TCP
