@@ -5,7 +5,7 @@ import requests
 import json
 app = Flask(__name__)                             
 
-PRD_EXTERNAL_SRV = 'http://external-service.gcp-demo.samuraitaiga.io:8080/echo'
+PRD_EXTERNAL_SRV = 'http://external-svc.default.svc.cluster.local/echo'
 DEV_EXTERNAL_SRV = 'http://localhost:8081/echo'
 
 myapp_env = os.environ.get('MYAPP_ENV')
