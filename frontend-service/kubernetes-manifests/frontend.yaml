@@ -22,7 +22,7 @@ spec:
           protocol: TCP
         env:
         - name: MYAPP_ENV
-        value: "prd"
+          value: "prd"
 ---
 apiVersion: v1
 kind: Service
