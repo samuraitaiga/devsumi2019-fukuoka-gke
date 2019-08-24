@@ -46,7 +46,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: frontend-svc
-  namespace: default
 spec:
   ports:
   - port: 8080
